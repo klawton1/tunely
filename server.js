@@ -9,11 +9,7 @@ app.get("/", function (req, res) {
 });
 app.get('/api', controllers.api.index);
 
-app.get('/api/albums', function(req, res){
-
-})
-
-
+app.get('/api/albums', controllers.albums.index);
 
 
 app.listen(process.env.PORT || 3000, function () {
