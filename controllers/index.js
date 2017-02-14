@@ -1,3 +1,4 @@
 module.exports = {
-  api: require('./apiController')
+  api: require('./apiControllers'),
+  albums: require('./albumsControllers')
 }

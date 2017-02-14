@@ -7,10 +7,11 @@ var controllers = require('./controllers');
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/views/index.html");
 });
+app.get('/api', controllers.api.index);
 
+app.get('/api/albums', function(req, res){
 
-
-
+})
 
 
 
